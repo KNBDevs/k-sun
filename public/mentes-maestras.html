@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentes Maestras - K-SUN</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li>|</li>
+                <li><a href="mentes-maestras.html">Mente Maestra</a></li>
+                <li>|</li>
+                <li><a href="crowdfunding.html">Crowdfunding</a></li>
+                <li>|</li>
+                <li><a href="objetivo.html">Objetivo</a></li>
+                <li>|</li>
+                <li><a href="modelos.html">Modelos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="mastermind-form">
+            <h2>Formulario de Mentes Maestras</h2>
+            <p>Ni es una fórmula de ego ni una agrupación de sabios eruditos. Para los que no 
+                familiaricen con el concepto de "Mente Maestra", no deja de ser un grupo de personas 
+                que trabajan por un objetivo final, que de una u otra forma están relacionadas y donde 
+                el beneficio de la otra persona será también de alguna manera el beneficio del resto, 
+                al igual que el mío. <br><br>
+                Buscamos con este formulario, poder captar la atención de profesionales cualificados
+                en relación al ámbito del proyecto, que quieran participar de forma activa con sus conocimientos,
+                trabajo y capacidades, a llevar a buen puerto y con el mayor de sus compromisos la idea 
+                que aquí se fragua. <br><br>
+                Algunos de los puestos o cargos de interés en la búsqueda serían: ingenieros de materiales,
+                ingenieros mecánicos, ingenieros o técnicos en energías renovables, ingenieros automovilísticos,
+                técnicos en automoción, mecánicos, traductores y personas que dominen otras lenguas, diseñadores,
+                técnicos en desarrollo web y redes, expertos en seo y redes sociales, asesores fiscales,
+                abogados especializados, etc. <br><br>
+                Si analizando tu perfil y tus conocimientos piensas que puedes aportar aunque no veas
+                tu puesto o categoría en esa lista de ejemplos, remite igualmente tu candidatura explicándonos. 
+            </p>
+            <div class="form-container">
+                <h3>Formulario</h3>
+                <form id="mastermindForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección de inicio de sesión -->
+        <section class="login-section">
+            <!-- contenido de inicio de sesión -->
+        </section>
+
+        <!-- Sección de registro -->
+        <section class="register-section">
+            <!-- contenido de registro -->
+        </section>
+
+        <!-- Sección de cierre de sesión -->
+        <section class="logout-section" style="display: none;">
+            <!-- contenido de cierre de sesión -->
+        </section>
+
+        <div>
+            <button id="scrollUpButton" title="Volver arriba">▲</button>
+        </div>
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Política de Privacidad</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+            <li><a href="about.html">Sobre el Proyecto</a></li>
+            <li><a href="mailto:contact@ksun.com">Contacto</a></li>
+        </ul>
+        <p>
+            &copy; 2024<span><a class="linkspan" href="./index.html"> K-Sun </a></span>
+            Todos los Derechos Reservados. Web by KNBDev.
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

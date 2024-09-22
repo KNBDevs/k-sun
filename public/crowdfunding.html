@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-SUN > Crowdfunding </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li>|</li>
+                <li><a href="mentes-maestras.html">Mente Maestra</a></li>
+                <li>|</li>
+                <li><a href="crowdfunding.html">Crowdfunding</a></li>
+                <li>|</li>
+                <li><a href="objetivo.html">Objetivo</a></li>
+                <li>|</li>
+                <li><a href="modelos.html">Modelos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="auth-bar">
+        <div class="login-section">
+            <form id="loginForm" action="login.php" method="POST">
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Contraseña" required>
+                <label for="rememberLogin"><input type="checkbox" id="rememberLogin" name="rememberLogin">
+                    Recordar</label>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="register-section">
+            <form id="registerForm" action="/register" method="POST">
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar Contraseña"
+                    required>
+                <label for="rememberRegister"><input type="checkbox" id="rememberRegister" name="rememberRegister">
+                    Recordar</label>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div class="logout-section">
+            <button id="logoutButton">Desconectar</button>
+        </div>
+    </div>
+
+    <main>
+        <section id="crowdfunding">
+            <h2>Contribuir al Crowdfunding</h2><br>
+            <p>Para visualizar las recompensas habrás de registrarte y confirmar tu email con el link de verificación. <br><br>
+            Encontrarás recompensas desde bajo precio a las más altas. No habrás de hacer desembolso alguno en el momento de realizar tu "aportación",
+            si te pedimos compromiso y seriedad si estás conforme con la recompensa escogida antes de aportar o unirte al crowdfunding.
+            Llegado el momento del fin del proceso de crowdfunding por su consecución o por límite de tiempo, nos pondremos en contacto con vosotros
+            para confirmar tu aportación y facilitarte los datos oportunos para que puedas realizarla. <br><br></p>
+            De esta manera queremos conseguir tu compromiso, confiando en tu buena fe como mecenas, sin atarte ni venderte humo. Solo recurriremos a tí
+            cuando el proyecto consiga toda su financiación. <br><br>
+        
+            Todas las recompensas a partir de la "Recompensa 15" incluirán un set de pegatinas y llavero de la marca. Todas las recompensas a partir
+            de la "Recompensa 20" incluirán el set de pegatinas, el llavero, una camiseta y una gorra. <br><br>
+
+            <div id="rewards-container">
+                <!-- Las recompensas se cargarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <div>
+            <button id="scrollUpButton" title="Volver arriba">▲</button>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Política de Privacidad</a></li>
+            <li><a href="cookies.html">Política de Cookies</a></li>
+            <li><a href="about.html">Sobre el Proyecto</a></li>
+            <li><a href="mailto:contact@ksun.com">Contacto</a></li>
+        </ul>
+        <p>
+            &copy; 2024<span><a class="linkspan" href="./index.html"> K-Sun </a></span>
+            Todos los Derechos Reservados. Web by KNBDev.
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
