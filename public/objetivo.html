@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-SUN > Objetivo</title>
+
+    <!-- Tailwind desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1C1C1C',
+                        accent: '#6D9A2B',
+                        primary: '#4A6A73',
+                        cta: '#F4A300',
+                        ctaHover: '#e69200'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../public/css/styles.css" />
+</head>
+
+<body class="bg-white text-dark dark:bg-dark dark:text-gray-200 font-sans">
+
+    <!-- HEADER -->
+    <header class="bg-primary text-accent py-8 shadow-lg">
+        <nav class="max-w-7xl mx-auto flex flex-col items-center">
+            <a href="../index.html">
+                <img class="w-64 hover:scale-105 transition duration-300" src="../public/images/logo.png" alt="Logo" />
+            </a>
+            <ul
+                class="flex flex-wrap justify-center pt-10 space-x-4 text-white font-semibold tracking-wide uppercase text-sm">
+                <li><a href="../index.html" class="hover:text-accent transition">Inicio</a></li>
+                <li>|</li>
+                <li><a href="mentes-maestras.html" class="hover:text-accent transition">Mente Maestra</a></li>
+                <li>|</li>
+                <li><a href="crowdfunding.html" class="hover:text-accent transition">Crowdfunding</a></li>
+                <li>|</li>
+                <li><a href="objetivo.html" class="hover:text-accent transition">Objetivo</a></li>
+                <li>|</li>
+                <li><a href="modelos.html" class="hover:text-accent transition">Modelos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main class="max-w-5xl mx-auto px-6 py-10 space-y-16">
+
+        <!-- Visión y Misión -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4 text-accent">Nuestra Visión y Misión</h2>
+            <p class="text-sm leading-relaxed">
+                En K-SUN, nuestra visión a largo plazo es consagrarnos más allá de una utopía. Buscamos trazar un camino
+                viable y sostenible que conecte la innovación social, la sostenibilidad y el impacto económico positivo.
+                Nuestra misión consiste en diseñar modelos replicables que no solo generen valor para los usuarios y
+                comunidades, sino que fomenten una nueva economía basada en la cooperación y la conciencia ecológica.
+            </p>
+        </section>
+
+        <!-- Slider -->
+        <section class="relative overflow-hidden">
+            <div class="slides flex transition-transform duration-500 ease-in-out" id="slider">
+                <div class="min-w-full"><img src="/public/images/pathSlider1.png" class="w-full rounded" /></div>
+                <div class="min-w-full"><img src="/public/images/pathSlider2.png" class="w-full rounded" /></div>
+                <div class="min-w-full"><img src="/public/images/pathSlider1.png" class="w-full rounded" /></div>
+            </div>
+            <div class="absolute inset-0 flex justify-between items-center px-4">
+                <button id="prevSlideBtn" class="text-white text-2xl bg-black/30 rounded-full p-2">&#10094;</button>
+                <button id="nextSlideBtn" class="text-white text-2xl bg-black/30 rounded-full p-2">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Sostenibilidad -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4 text-accent">Innovación, Sostenibilidad y Impacto Ambiental</h2>
+            <p class="text-sm leading-relaxed">
+                Nuestro compromiso con la innovación tecnológica es uno de los pilares fundamentales que guían nuestra
+                estrategia. Nos orientamos hacia modelos de negocio que respeten el medio ambiente, reduzcan el
+                desperdicio y optimicen los recursos. Implementamos soluciones que integran principios de economía
+                circular y transición ecológica, garantizando un desarrollo responsable y consciente.
+            </p>
+        </section>
+
+        <!-- Estrategia -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4 text-accent">Estrategia de Mercado y Plan de Lanzamiento</h2>
+            <p class="text-sm leading-relaxed">
+                Nos dirigimos a un segmento de mercado diverso que incluye consumidores ecológicamente conscientes,
+                emprendedores sociales y comunidades colaborativas. Nuestro plan de lanzamiento se estructura en fases:
+                validación de ideas, campañas de micromecenazgo, alianzas estratégicas, y escalado progresivo. Este
+                enfoque nos permite medir impacto, ajustar procesos y optimizar recursos desde el inicio.
+            </p>
+        </section>
+
+        <!-- Scroll Up Button -->
+        <button id="scrollUpButton"
+            class="hidden fixed bottom-6 right-6 bg-accent text-white px-3 py-2 rounded-full shadow-md hover:bg-ctaHover transition">
+            ▲
+        </button>
+    </main>
+
+   <!-- FOOTER -->
+  <footer class="bg-primary text-white text-sm text-center py-6 border-t border-gray-600">
+    <ul class="flex flex-wrap justify-center gap-6 mb-2">
+      <li><a href="privacy.html" class="hover:text-accent transition">Privacidad</a></li>
+      <li><a href="cookies.html" class="hover:text-accent transition">Cookies</a></li>
+      <li><a href="about.html" class="hover:text-accent transition">Sobre el Proyecto</a></li>
+      <li><a href="mailto:contact@ksun.com" class="hover:text-accent transition">Contacto</a></li>
+    </ul>
+    <p class="text-xs mt-2">&copy; 2024 <a class="text-accent hover:text-dark transition" href="../index.html">K-Sun</a>. Todos los Derechos Reservados.</p>
+  </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="../public/js/objetivo.js"></script>
+</body>
+
+</html>

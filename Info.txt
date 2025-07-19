@@ -1,0 +1,26 @@
+TERMINAL:
+
+Introducir: node server.js
+
+Abrir explorador: localhost:3000
+
+Pass app ("sendmail"):  _____________
+
+
+
+
+
+Ideogram promt (coche):
+
+Coche compacto (boceto, dibujo):
+A futuristic and aesthetically pleasing sketch of a compact solar car. 
+It presents modern and aggressive lines. The body is high. The roof of the car is decorated with 
+an expansive solar panel, and the body is designed with light colors and carbon fiber. 
+The hood area and sides of the car, doors, and wings will have panels integrated into 
+the material of the vehicle. The overall design 
+It is sleek and aerodynamic, conveying a feeling of speed and efficiency. 
+The background is minimalist, allowing the car to take center stage. 
+and show its innovative and environmentally friendly concept. draw 
+Plus some additional solar panel kits to add to the vehicle as a plug. 
+and game kit.
+

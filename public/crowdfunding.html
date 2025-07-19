@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-dark text-gray-300 scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-SUN > Crowdfunding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../public/js/tailwind-config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="font-sans flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="bg-primary text-accent py-8 shadow-lg">
+        <nav class="max-w-7xl mx-auto flex flex-col items-center">
+            <a href="../index.html">
+                <img class="w-64 hover:scale-105 transition duration-300" src="../public/images/logo.png" alt="Logo" />
+            </a>
+            <ul
+                class="flex flex-wrap justify-center pt-10 space-x-4 text-white font-semibold tracking-wide uppercase text-sm">
+                <li><a href="../index.html" class="hover:text-accent transition">Inicio</a></li>
+                <li>|</li>
+                <li><a href="mentes-maestras.html" class="hover:text-accent transition">Mente Maestra</a></li>
+                <li>|</li>
+                <li><a href="crowdfunding.html" class="hover:text-accent transition">Crowdfunding</a></li>
+                <li>|</li>
+                <li><a href="objetivo.html" class="hover:text-accent transition">Objetivo</a></li>
+                <li>|</li>
+                <li><a href="modelos.html" class="hover:text-accent transition">Modelos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- AUTH BAR COMPACTA HORIZONTAL -->
+    <div
+        class="bg-dark/70 text-sm text-gray-300 px-4 py-2 flex flex-col md:flex-row items-center justify-between gap-y-2 md:gap-y-0 md:gap-x-6 shadow-md border-t border-gray-700">
+
+        <!-- Login -->
+        <form id="loginForm" action="login.php" method="POST" class="flex items-center gap-x-2">
+            <input type="email" name="loginEmail" placeholder="Email" required
+                class="px-2 py-1 rounded bg-dark border border-gray-600 text-xs w-32 focus:outline-none focus:border-accent" />
+            <input type="password" name="loginPassword" placeholder="Contraseña" required
+                class="px-2 py-1 rounded bg-dark border border-gray-600 text-xs w-32 focus:outline-none focus:border-accent" />
+            <button type="submit"
+                class="bg-accent hover:bg-[#558A1F] text-white text-xs px-3 py-1 rounded font-medium transition">Login</button>
+        </form>
+
+        <!-- Divider -->
+        <div class="hidden md:block h-6 border-l border-gray-500"></div>
+
+        <!-- Registro -->
+        <form id="registerForm" action="/register" method="POST" class="flex items-center gap-x-2">
+            <input type="text" name="name" placeholder="Nombre" required
+                class="px-2 py-1 rounded bg-dark border border-gray-600 text-xs w-24 focus:outline-none focus:border-accent" />
+            <input type="email" name="email" placeholder="Email" required
+                class="px-2 py-1 rounded bg-dark border border-gray-600 text-xs w-32 focus:outline-none focus:border-accent" />
+            <input type="password" name="password" placeholder="Contraseña" required
+                class="px-2 py-1 rounded bg-dark border border-gray-600 text-xs w-28 focus:outline-none focus:border-accent" />
+            <button type="submit"
+                class="bg-accent hover:bg-[#558A1F] text-white text-xs px-3 py-1 rounded font-medium transition">Registrar</button>
+        </form>
+
+        <!-- Divider -->
+        <div class="hidden md:block h-6 border-l border-gray-500"></div>
+
+        <!-- Logout -->
+        <div class="flex items-center">
+            <button id="logoutButton"
+                class="bg-accent hover:bg-[#558A1F] text-white text-xs px-3 py-1 rounded font-medium transition">Desconectar</button>
+        </div>
+    </div>
+
+
+    <!-- MAIN -->
+    <main class="flex-1 px-4 py-16 max-w-6xl mx-auto text-center">
+
+        <!-- TEXTO CROWDFUNDING -->
+        <section id="crowdfunding" class="space-y-6">
+            <h2 class="text-accent text-3xl font-bold mb-4">Contribuir al Crowdfunding</h2>
+            <p class="text-base leading-relaxed text-justify">
+                Para visualizar las recompensas habrás de registrarte y confirmar tu email con el link de verificación.
+                <br><br>
+                Encontrarás recompensas desde bajo precio a las más altas. No habrás de hacer desembolso alguno en el
+                momento de realizar tu "aportación",
+                pero sí te pedimos compromiso y seriedad si estás conforme con la recompensa escogida antes de unirte al
+                crowdfunding. <br><br>
+                Cuando finalice el proceso (por consecución del objetivo o vencimiento del plazo), contactaremos contigo
+                para confirmar tu aportación. <br><br>
+                Queremos tu compromiso confiando en tu buena fe como mecenas, sin atarte ni venderte humo. Solo
+                recurriremos a ti si el proyecto consigue su financiación. <br><br>
+                <strong>Todas las recompensas desde la número 15 incluirán set de pegatinas y llavero. Desde la número
+                    20 incluirán camiseta y gorra.</strong>
+            </p>
+
+            <!-- Contenedor de recompensas -->
+            <div id="rewards-container" class="grid gap-6 mt-10 sm:grid-cols-2 md:grid-cols-3">
+                <!-- Recompensas generadas dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Scroll up -->
+        <button id="scrollUpButton" title="Volver arriba"
+            class="hidden fixed bottom-5 right-5 bg-accent text-white text-lg px-4 py-2 rounded-full shadow-lg hover:bg-[#558A1F] transition transform hover:scale-110">▲</button>
+
+    </main>
+
+   <!-- FOOTER -->
+  <footer class="bg-primary text-white text-sm text-center py-6 border-t border-gray-600">
+    <ul class="flex flex-wrap justify-center gap-6 mb-2">
+      <li><a href="privacy.html" class="hover:text-accent transition">Privacidad</a></li>
+      <li><a href="cookies.html" class="hover:text-accent transition">Cookies</a></li>
+      <li><a href="about.html" class="hover:text-accent transition">Sobre el Proyecto</a></li>
+      <li><a href="mailto:contact@ksun.com" class="hover:text-accent transition">Contacto</a></li>
+    </ul>
+    <p class="text-xs mt-2">&copy; 2024 <a class="text-accent hover:text-dark transition" href="../index.html">K-Sun</a>. Todos los Derechos Reservados.</p>
+  </footer>
+
+    <script src="../public/js/main.js"></script>
+</body>
+
+</html>

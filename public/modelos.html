@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-SUN > Modelos</title>
+
+    <!-- Tailwind desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1C1C1C',
+                        accent: '#6D9A2B',
+                        primary: '#4A6A73',
+                        cta: '#F4A300',
+                        ctaHover: '#e69200'
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Estilos adicionales -->
+    <link rel="stylesheet" href="../public/css/styles.css" />
+</head>
+
+<body class="bg-white text-dark dark:bg-dark dark:text-gray-200 font-sans">
+
+    <!-- HEADER -->
+    <header class="bg-primary text-accent py-8 shadow-lg">
+        <nav class="max-w-7xl mx-auto flex flex-col items-center">
+            <a href="../index.html">
+                <img class="w-64 hover:scale-105 transition duration-300" src="../public/images/logo.png" alt="Logo" />
+            </a>
+            <ul
+                class="flex flex-wrap justify-center pt-10 space-x-4 text-white font-semibold tracking-wide uppercase text-sm">
+                <li><a href="../index.html" class="hover:text-accent transition">Inicio</a></li>
+                <li>|</li>
+                <li><a href="mentes-maestras.html" class="hover:text-accent transition">Mente Maestra</a></li>
+                <li>|</li>
+                <li><a href="crowdfunding.html" class="hover:text-accent transition">Crowdfunding</a></li>
+                <li>|</li>
+                <li><a href="objetivo.html" class="hover:text-accent transition">Objetivo</a></li>
+                <li>|</li>
+                <li><a href="modelos.html" class="hover:text-accent transition">Modelos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main -->
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+        <!-- Intro -->
+        <section>
+            <h2 class="text-2xl font-bold mb-4 text-accent">Modelos previstos</h2>
+            <p class="text-sm leading-relaxed">
+                Aclarar que estas imágenes han sido creadas con IA, pero traen de buena forma una idea de los modelos
+                que podríamos tener en mente producir. Lógicamente habremos de abordar cada uno de manera individual y
+                por fases, siendo el primer modelo a desarrollar el <strong>"Model One"</strong>.<br><br>
+                No podemos facilitar datos técnicos hasta ver la viabilidad técnica del proyecto y el análisis completo
+                por parte del equipo de desarrollo, pero queríamos daros alguna pincelada de la posible estética y
+                funcionalidad. La imagen es una mera simulación.<br><br>
+                El nombre de los modelos no es definitivo. De hecho, una de las recompensas como mecenas es la de
+                <strong>bautizar un modelo</strong>. Hasta que no cerremos ese proceso, no se asignarán nombres finales.
+            </p>
+        </section>
+
+        <!-- Modelos -->
+        <section class="grid md:grid-cols-2 gap-10">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-center">
+                <h3 class="text-xl font-semibold mb-3 text-accent">Model One</h3>
+                <img src="../public/images/modelOne.png" alt="Model One" class="w-full rounded mb-4" />
+                <p class="text-sm">Modelo biplaza compacto, con autonomía eficiente y amplio maletero.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-center">
+                <h3 class="text-xl font-semibold mb-3 text-accent">Model Two</h3>
+                <img src="../public/images/modelTwo.png" alt="Model Two" class="w-full rounded mb-4" />
+                <p class="text-sm">Modelo compacto 5 puertas, gran espacio para pasajeros y maletero generoso.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-center">
+                <h3 class="text-xl font-semibold mb-3 text-accent">Model Three</h3>
+                <img src="../public/images/soon_model.png" alt="Model Three" class="w-full rounded mb-4" />
+                <p class="text-sm">Monovolumen familiar hasta 7 plazas, ideal para grandes familias.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-center">
+                <h3 class="text-xl font-semibold mb-3 text-accent">Model Four</h3>
+                <img src="../public/images/soon_model.png" alt="Model Four" class="w-full rounded mb-4" />
+                <p class="text-sm">Sedán deportivo, 4 plazas, diseñado para largas distancias con estilo racing.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-center">
+                <h3 class="text-xl font-semibold mb-3 text-accent">Model Five</h3>
+                <img src="../public/images/soon_model.png" alt="Model Five" class="w-full rounded mb-4" />
+                <p class="text-sm">Van modular adaptable al transporte, camperización o hasta 9 plazas.</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 text-center">
+                <h3 class="text-xl font-semibold mb-3 text-accent">Model Six</h3>
+                <img src="../public/images/soon_model.png" alt="Model Six" class="w-full rounded mb-4" />
+                <p class="text-sm">Vehículo off-road. 5 plazas amplias y tracción lista para cualquier terreno.</p>
+            </div>
+        </section>
+
+        <!-- Scroll Up -->
+        <button id="scrollUpButton"
+            class="hidden fixed bottom-6 right-6 bg-accent text-white px-3 py-2 rounded-full shadow-md hover:bg-ctaHover transition">
+            ▲
+        </button>
+
+    </main>
+
+   <!-- FOOTER -->
+  <footer class="bg-primary text-white text-sm text-center py-6 border-t border-gray-600">
+    <ul class="flex flex-wrap justify-center gap-6 mb-2">
+      <li><a href="privacy.html" class="hover:text-accent transition">Privacidad</a></li>
+      <li><a href="cookies.html" class="hover:text-accent transition">Cookies</a></li>
+      <li><a href="about.html" class="hover:text-accent transition">Sobre el Proyecto</a></li>
+      <li><a href="mailto:contact@ksun.com" class="hover:text-accent transition">Contacto</a></li>
+    </ul>
+    <p class="text-xs mt-2">&copy; 2024 <a class="text-accent hover:text-dark transition" href="../index.html">K-Sun</a>. Todos los Derechos Reservados.</p>
+  </footer>
+
+    <!-- Scripts -->
+    <script src="../public/js/main.js" type="module"></script>
+
+</body>
+
+</html>

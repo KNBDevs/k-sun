@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-dark text-gray-300">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K-SUN > Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#1C1C1C',
+                        accent: '#6D9A2B',
+                        primary: '#4A6A73',
+                        cta: '#F4A300',
+                        ctaHover: '#e69200'
+                    }
+                }
+            }
+        };
+    </script>
+
+</head>
+
+<body class="font-sans">
+
+    <!-- HEADER -->
+    <header class="bg-primary text-accent py-8 shadow-lg">
+        <nav class="max-w-7xl mx-auto flex flex-col items-center">
+            <a href="../index.html">
+                <img class="w-64 hover:scale-105 transition duration-300" src="../public/images/logo.png" alt="Logo" />
+            </a>
+            <ul
+                class="flex flex-wrap justify-center pt-10 space-x-4 text-white font-semibold tracking-wide uppercase text-sm">
+                <li><a href="index.html" class="hover:text-accent transition">Inicio</a></li>
+                <li>|</li>
+                <li><a href="/public/mentes-maestras.html" class="hover:text-accent transition">Mente Maestra</a></li>
+                <li>|</li>
+                <li><a href="/public/crowdfunding.html" class="hover:text-accent transition">Crowdfunding</a></li>
+                <li>|</li>
+                <li><a href="/public/objetivo.html" class="hover:text-accent transition">Objetivo</a></li>
+                <li>|</li>
+                <li><a href="/public/modelos.html" class="hover:text-accent transition">Modelos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="text-center">
+
+        <!-- Hero -->
+        <div class="relative w-screen h-[400px] overflow-hidden mt-4">
+            <img src="public/images/indexintro_img.png" alt="Hero Image"
+                class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-black/50 flex items-center justify-center px-6">
+                <h2 class="text-white text-2xl md:text-3xl font-semibold text-center">Revolucionando la Movilidad con
+                    Energía Solar</h2>
+            </div>
+        </div>
+
+
+        <!-- Contenido -->
+        <div class="mb-28">
+            <section class="py-16 text-center">
+                <h2 class="text-accent text-2xl font-bold mb-4">¿Quiénes Somos?</h2>
+                <p class="max-w-3xl mx-auto text-base leading-relaxed">
+                    En K-SUN, nuestra misión es transformar la forma en que te mueves, aprovechando el poder
+                    del sol para ofrecerte una alternativa de transporte que no dependa de combustibles fósiles
+                    ni de energías no renovables. Desde la ciudad hasta los terrenos más desafiantes, nuestros
+                    vehículos estarán diseñados para ofrecerte la mejor experiencia de movilidad.
+                </p>
+            </section>
+
+            <section class="py-16 text-center">
+                <h2 class="text-accent text-2xl font-bold mb-4">Nuestra visión para el Futuro</h2>
+                <p class="max-w-3xl mx-auto text-base leading-relaxed">
+                    Estamos construyendo un equipo de mentes brillantes para dar vida a este proyecto. Nuestro
+                    objetivo es desarrollar vehículos solares innovadores y crear una comunidad de personas
+                    comprometidas con un futuro más verde.
+                </p>
+            </section>
+
+            <section class="py-16 text-center">
+                <h2 class="text-accent text-2xl font-bold mb-4">Lo que nos diferencia</h2>
+                <p class="max-w-3xl mx-auto text-base leading-relaxed">
+                    Nuestros vehículos solares estarán diseñados para autoabastecerse de forma eficiente,
+                    incluso en días nublados, y cuentan con un sistema modular plug and play para facilitar
+                    el mantenimiento.
+                </p>
+            </section>
+
+            <section class="py-16 text-center">
+                <h2 class="text-accent text-2xl font-bold mb-4">Únete a nuestra misión</h2>
+                <p class="max-w-3xl mx-auto text-base leading-relaxed mb-6">
+                    Buscamos talentos y colaboradores apasionados para unir fuerzas y convertir esta visión en
+                    realidad. Si compartes nuestra pasión por la sostenibilidad y la innovación, te invitamos
+                    a unirte a nuestro equipo o a apoyarnos a través de nuestro crowdfunding. <br><br>
+                    Serás informado de nuestra actividad y de los próximos pasos desde la newsletter.
+                </p>
+                <a href="#signup"
+                    class="inline-block bg-cta hover:bg-ctaHover text-white px-6 py-3 rounded font-medium transition">Suscríbete
+                    para Más Información</a>
+            </section>
+
+            <!-- Slider -->
+            <section class="relative w-screen overflow-hidden mt-16">
+                <div class="flex transition-transform duration-500 w-full" id="slide-track">
+                    <div class="min-w-full"><img src="public/images/pathSlider1.png" alt="Imagen 1"
+                            class="w-full h-auto" /></div>
+                    <div class="min-w-full"><img src="public/images/pathSlider2.png" alt="Imagen 2"
+                            class="w-full h-auto" /></div>
+                    <div class="min-w-full"><img src="public/path-to-image-3.jpg" alt="Imagen 3"
+                            class="w-full h-auto" /></div>
+                </div>
+                <div class="absolute top-1/2 left-0 right-0 flex justify-between px-4 -translate-y-1/2 z-10">
+                    <button onclick="prevSlide()"
+                        class="w-10 h-10 bg-black/70 text-white rounded-full flex items-center justify-center hover:opacity-100 opacity-70 transition">&#10094;</button>
+                    <button onclick="nextSlide()"
+                        class="w-10 h-10 bg-black/70 text-white rounded-full flex items-center justify-center hover:opacity-100 opacity-70 transition">&#10095;</button>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Botón scroll up -->
+        <div>
+            <button id="scrollUpButton" title="Volver arriba"
+                class="hidden fixed bottom-5 right-5 bg-accent text-white text-lg px-4 py-2 rounded shadow-lg hover:bg-[#558A1F] transition">▲</button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+  <footer class="bg-primary text-white text-sm text-center py-6 border-t border-gray-600">
+    <ul class="flex flex-wrap justify-center gap-6 mb-2">
+      <li><a href="public/privacy.html" class="hover:text-accent transition">Privacidad</a></li>
+      <li><a href="public/cookies.html" class="hover:text-accent transition">Cookies</a></li>
+      <li><a href="public/about.html" class="hover:text-accent transition">Sobre el Proyecto</a></li>
+      <li><a href="mailto:contact@ksun.com" class="hover:text-accent transition">Contacto</a></li>
+    </ul>
+    <p class="text-xs mt-2">&copy; 2024 <a class="text-accent hover:text-dark transition" href="../index.html">K-Sun</a>. Todos los Derechos Reservados.</p>
+  </footer>
+
+    <!-- Módulos funcionales -->
+    <script type="module" src="public/js/ui.js"></script>
+    <script type="module" src="public/js/auth.js"></script>
+    <script type="module" src="public/js/rewards.js"></script>
+    <script type="module" src="public/js/mastermind.js"></script>
+
+    <!-- Script principal de la app -->
+    <script type="module" src="public/js/main.js"></script>
+
+</body>
+
+</html>

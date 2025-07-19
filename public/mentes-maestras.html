@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-dark text-gray-300 scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentes Maestras - K-SUN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../public/js/tailwind-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="font-sans">
+
+  <!-- HEADER -->
+    <header class="bg-primary text-accent py-8 shadow-lg">
+        <nav class="max-w-7xl mx-auto flex flex-col items-center">
+            <a href="../index.html">
+                <img class="w-64 hover:scale-105 transition duration-300" src="../public/images/logo.png" alt="Logo" />
+            </a>
+            <ul
+                class="flex flex-wrap justify-center pt-10 space-x-4 text-white font-semibold tracking-wide uppercase text-sm">
+                <li><a href="../index.html" class="hover:text-accent transition">Inicio</a></li>
+                <li>|</li>
+                <li><a href="mentes-maestras.html" class="hover:text-accent transition">Mente Maestra</a></li>
+                <li>|</li>
+                <li><a href="crowdfunding.html" class="hover:text-accent transition">Crowdfunding</a></li>
+                <li>|</li>
+                <li><a href="objetivo.html" class="hover:text-accent transition">Objetivo</a></li>
+                <li>|</li>
+                <li><a href="modelos.html" class="hover:text-accent transition">Modelos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- MAIN -->
+  <main class="px-4 py-16 max-w-5xl mx-auto text-center space-y-16">
+
+    <!-- TEXTO INTRODUCTORIO -->
+    <section id="mastermind-form">
+      <h2 class="text-accent text-3xl font-bold mb-6">Formulario de Mentes Maestras</h2>
+      <p class="text-base leading-relaxed text-justify mb-10">
+        Ni es una fórmula de ego ni una agrupación de sabios eruditos. Para los que no 
+        familiaricen con el concepto de "Mente Maestra", no deja de ser un grupo de personas 
+        que trabajan por un objetivo final compartido. <br><br>
+        Buscamos captar la atención de profesionales cualificados afines al proyecto, con ganas de participar activamente aportando conocimientos, trabajo y compromiso. <br><br>
+        Perfiles buscados: ingenieros, técnicos, diseñadores, traductores, desarrolladores web, expertos en SEO/redes, asesores fiscales, abogados, etc. <br><br>
+        Si tu perfil no figura pero crees que puedes aportar, no dudes en enviarnos tu candidatura.
+      </p>
+
+      <!-- FORMULARIO -->
+      <div class="bg-dark/30 rounded-xl p-8 text-left shadow-lg">
+        <h3 class="text-accent text-xl font-semibold mb-6 text-center">Formulario</h3>
+        <form id="mastermindForm" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1">Nombre:</label>
+            <input type="text" id="name" name="name" required
+              class="w-full p-3 rounded bg-dark border border-gray-600 focus:outline-none focus:border-accent transition" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email:</label>
+            <input type="email" id="email" name="email" required
+              class="w-full p-3 rounded bg-dark border border-gray-600 focus:outline-none focus:border-accent transition" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Mensaje:</label>
+            <textarea id="message" name="message" rows="6" required
+              class="w-full p-3 rounded bg-dark border border-gray-600 focus:outline-none focus:border-accent transition resize-y"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit"
+              class="bg-accent text-white px-6 py-2 rounded hover:bg-[#558A1F] transition font-semibold">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Botón scroll up -->
+    <div>
+      <button id="scrollUpButton" title="Volver arriba"
+        class="hidden fixed bottom-5 right-5 bg-accent text-white text-lg px-4 py-2 rounded-full shadow-lg hover:bg-[#558A1F] transition transform hover:scale-110">▲</button>
+    </div>
+
+  </main>
+
+ <!-- FOOTER -->
+  <footer class="bg-primary text-white text-sm text-center py-6 border-t border-gray-600">
+    <ul class="flex flex-wrap justify-center gap-6 mb-2">
+      <li><a href="privacy.html" class="hover:text-accent transition">Privacidad</a></li>
+      <li><a href="cookies.html" class="hover:text-accent transition">Cookies</a></li>
+      <li><a href="about.html" class="hover:text-accent transition">Sobre el Proyecto</a></li>
+      <li><a href="mailto:contact@ksun.com" class="hover:text-accent transition">Contacto</a></li>
+    </ul>
+    <p class="text-xs mt-2">&copy; 2024 <a class="text-accent hover:text-dark transition" href="../index.html">K-Sun</a>. Todos los Derechos Reservados.</p>
+  </footer>
+
+  <script src="../public/js/main.js"></script>
+</body>
+
+</html>
